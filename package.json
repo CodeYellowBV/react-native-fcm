@@ -2,14 +2,11 @@
   "author": {
     "name": "Libin Lu"
   },
-  "bugs": {
-    "url": "https://github.com/evollu/react-native-fcm/issues"
-  },
-  "description": "React Native bridge for firebase cloud messaging (FCM)",
+  "description": "Fork of react-native-fcm that supports Gradle 7",
   "peerDependencies": {
     "react-native": ">=0.40.0"
   },
-  "homepage": "https://github.com/evollu/react-native-fcm",
+  "homepage": "https://github.com/CodeYellowBV/react-native-fcm",
   "keywords": [
     "React-Native",
     "ios",
@@ -22,7 +19,7 @@
   "name": "react-native-fcm",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evollu/react-native-fcm.git"
+    "url": "git+https://github.com/CodeYellowBV/react-native-fcm.git"
   },
-  "version": "16.2.4"
+  "version": "16.2.4-cy-1"
 }
