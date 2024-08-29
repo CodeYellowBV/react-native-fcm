@@ -130,22 +130,22 @@ android {
 }
 
 dependencies {
-    compile(project(':react-native-maps')) {
+    implementation(project(':react-native-maps')) {
         exclude group: 'com.google.android.gms', module: 'play-services-base'
         // This resolution make compiler ignoring play-service-base's version requirement in react-native-maps
         // so that it only read from react-native-fcm
         // you can also lock the version in this gradle file and ignore all module declaration
         // or you can use ResolutionStragety
     }
-    compile project(':react-native-fcm')
-    compile fileTree(dir: "libs", include: ["*.jar"])
-    compile "com.facebook.react:react-native:+"  // From node_modules
+    implementation project(':react-native-fcm')
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "com.facebook.react:react-native:+"  // From node_modules
 }
 
 // Run this once to be able to run the application with BUCK
 // puts all compile dependencies into folder libs for BUCK to use
 task copyDownloadableDepsToLibs(type: Copy) {
-  from configurations.compile
+  from configurations.implementation
   into 'libs'
 }
 
